@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Reddit: news before it happens</title>
+    <script type="text/javascript" src="pkg/json2.js"></script>
+    <script type="text/javascript" src="pkg/jquery.min.js"></script>
+    <script type="text/javascript" src="pkg/underscore.js"></script>
+    <script type="text/javascript" src="pkg/jquery.json.js"></script>
+    <script type="text/javascript" src="pkg/jstorage.js"></script>
+    <script type="text/javascript" src="pkg/object.js"></script>
+    <script type="text/javascript" src="pkg/sprintf.js"></script>
+    <script type="text/javascript" src="pkg/backbone.js"></script>
+    <script type="text/javascript" src="pkg/handlebars.js"></script>
+    <script type="text/javascript" src="lib/a.init.js"></script>
+    <script type="text/javascript" src="lib/featured.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body class="">
+    <div class="overlay"></div>
+    <div class="header">
+      <a href="index.html"><img src="img/logo.png"/></a>
+      <ul class="tags">
+        <li class="tag" tag="" class="on">what's hot</li>
+        <li class="tag" tag="new">new</li>
+        <li class="tag" tag="controversial">controversial</li>
+        <li class="tag" tag="top">top</li>
+        <li class="saved">saved</li>
+      </ul>
+      <div class="user">
+        <span><a target="_blank"  class="uname" href="http://www.reddit.com/user/lepoulet">lepoulet</a> (121)</span>
+        <a target="_blank" class="inbox" href="http://www.reddit.com/message/inbox/"></a>
+        <a target="_blank" class="preferences" href="http://www.reddit.com/prefs/"></a>
+        <a class="logout" href="#">log out</a>
+      </div>
+    </div>
+    <div id="container">
+      <h1 class="subreddit"><a href="#" class="subreddit">/r/reddit.com</a></h1>
+      <div id="featured">
+        
+        <div class="featured-nav">
+          <span>Sponsored link</span><br/>
+          <div class="left"></div><div class="right"></div>
+        </div>
+        <ul></ul>
+
+      </div>
+      <ul class="items"></ul>
+      <div id="more">Load more links</div>
+    </div>
+    <div class="loading"><img src="img/load.gif"/></div>
+    <div class="sidebar">       
+        <div class="search">
+            <input type="text" value='Search Reddit'/>
+        </div>
+        <div class="login">
+            <div class="message">
+              <h3>Easy, tiger.</h3>
+              <p>We're just as excited as you are, but you'll need an account to start using Reddit.</p>
+              <p>Take a second to get your account set up, and we'll get you right back to the action</p>
+              <p><a href="#" class="close">Close</a>
+            </div>
+            <h3 class="login">Log <strong>In</strong><span>(or, <a href="#">sign up</a>)</span></h3>
+            <h3 class="signup">Sign <strong>Up</strong><span>(or, <a href="#">log in</a>)</span></h3>
+            <input type="text" name="username" value='username'/>
+            <input type="password" name="passwd"value='password'/>
+            <input class="signup" name="passwd-conf" type="password" value='password'/>
+            <input class="signup" name="email" type="text" value='email (optional)'/>
+            <br/>
+            <input id="t1" type="text" name="robots-only" value='Do not type in this field.'/>
+            <button class="login">Log In</button>
+            <button class="signup">Sign Up</button>
+            
+        </div>
+        <div id="actions">
+            <a href="#"><div class="submit"><h1>Submit a Link</h1><span>...to anything interesting: news, videos, images...</span></div></a>
+            <a href="#"><div class="create"><h1>Create a Community</h1><span>..for your band, your school, your hobby...</span></div></a>
+        </div>
+        <div id="gold-promo">
+            <img src="img/gold.png"/>
+        </div>
+        <div id="advert">
+            <img src="img/ad.png"/>
+            <a href="#">Reddit this Ad</a>
+        </div>
+    </div>
+  </body>
+</html>

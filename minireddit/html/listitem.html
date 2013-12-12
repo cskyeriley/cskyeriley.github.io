@@ -1,0 +1,10 @@
+<div class="vote"><div class="up"></div><div class="score">{{data.score}}</div><div class="down"></div></div>
+{{#if data.thumbnail}}<div class="thumb"><div><img src="{{data.thumbnail}}"/></div></div>{{/if}}
+<div class="content"><h3><a class="main-link" target="_blank" href="{{data.url}}">{{data.title}}</a><a href="http://{{data.domain}}" class="domain" target="_blank">({{data.domain}})</a></h3>
+{{#if data.selftext}}<div class="self-expand"></div>{{/if}}
+{{#if data.media}}<div class="media-expand"></div>{{/if}}
+<p class="sub-detail"><a href="#" class="subreddit" tag="{{data.subreddit}}">{{data.subreddit}}</a><span class="submitted">submitted {{readable_time}} by <a href="http://reddit.com/user/{{data.author}}" target="_blank" class="user">{{data.author}}</a></span></p>
+<p class="function"><a href="http://reddit.com{{data.permalink}}" target="_blank" class="comments">{{data.num_comments}} comments</a><a href="#">share</a>{{#if saved}}<a class="saved" href="#">saved</a>{{else}}<a class="save" href="#">save</a>{{/if}}<a class="hide" href="#">hide</a><a href="#">report</a></p>
+{{#if data.selftext}}<div class="selftext">{{{html}}}</div>{{/if}}
+{{#if data.media}}<div class="selftext">{{{embed}}}</div>{{/if}}
+</div>

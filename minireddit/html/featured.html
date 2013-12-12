@@ -1,0 +1,8 @@
+<div class="vote"><div class="up"></div><div class="score">{{data.score}}</div><div class="down"></div></div>
+
+<div class="content">
+{{#if data.selftext}}<div class="self-expand"></div>{{/if}}
+<h3><a class="main-link" target="_blank" href="{{data.url}}">{{data.title}}</a><a href="http://{{data.domain}}" class="domain" target="_blank">({{data.domain}})</a></h3>
+<p class="sub-detail"><span class="submitted">promoted {{readable_time}} by <a href="http://reddit.com/user/lepoulet" target="_blank" class="user">lepoulet</a></span></p>
+{{#if data.selftext}}<div class="selftext">{{{html}}}</div>{{/if}}
+</div>
